@@ -41,7 +41,7 @@ export function App() {
     const normalizedFilter = filter.toLowerCase().trim();
 
     return contacts.filter(contact =>
-        contact.name.toLowerCase().includes(normalizedFilter),
+        contact.name.toLowerCase().includes(normalizedFilter)
       );
   };
 
@@ -65,7 +65,7 @@ export function App() {
         
       </Container>
     )
-}
+};
 
 // export class App extends Component {
   // state = {
