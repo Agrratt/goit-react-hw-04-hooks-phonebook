@@ -8,8 +8,7 @@ import { useLocalStorage } from 'hooks/useLocalStorage';
 
 
 export function App() {
-  const [contacts, setContacts] = useLocalStorage('contacts',
-    [
+  const [contacts, setContacts] = useLocalStorage([
       { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
       { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
       { id: 'id-3', name: 'Eden Clements', number: '645-17-79' },
@@ -41,8 +40,7 @@ export function App() {
     const normalizedFilter = filter.toLowerCase().trim();
 
     return contacts.filter(contact =>
-        contact.name.toLowerCase().includes(normalizedFilter)
-      );
+      contact.name.toLowerCase().includes(normalizedFilter));
   };
 
   const onDeleteContact = (id) => {
