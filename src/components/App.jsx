@@ -51,8 +51,7 @@ export function App() {
     ));
   };
 
-  return (
-      
+  return (  
       <Container>
         <h1>Phonebook</h1>
         <Form onFormSubmit={addContacts} />
@@ -65,7 +64,6 @@ export function App() {
           deleteContact={onDeleteContact } />
         
       </Container>
-    
     )
 }
 
